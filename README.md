@@ -1,54 +1,24 @@
-# React + TypeScript + Vite
+# Tab By Shivanshu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tab By Shivanshu is a Chrome extension that enhances your new tab experience with multiple useful and fun features, including a weather widget, jokes, quotes, dark and light mode, a to-do list, and quick links to popular platforms.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Weather Widget**: Displays real-time weather information based on your location.
+- **Jokes & Quotes**: Enjoy a new joke or motivational quote every time you open a new tab.
+- **Dark & Light Mode**: Toggle between dark and light themes for a comfortable viewing experience.
+- **To-Do List**: Keep track of your tasks directly on the new tab page.
+- **Quick Links**: Access LinkedIn, GitHub, YouTube, Twitter, and ChatGPT with one click.
+- **Minimalist UI**: A clean and distraction-free interface.
 
-## Expanding the ESLint configuration
+## Note
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This repository includes only the source code for the extension. To use it, download the extension from [Tab-By-Shivanshu-Ext](#) (replace with actual link).
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Author
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Developed by **Shivanshu Garg**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
+Enjoy using **Tab By Shivanshu** and make your browsing experience more fun!
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
