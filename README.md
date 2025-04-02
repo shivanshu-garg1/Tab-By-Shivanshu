@@ -13,8 +13,7 @@ Tab By Shivanshu is a Chrome extension that enhances your new tab experience wit
 
 ## Note
 
-This repository includes only the source code for the extension. To use it, download the extension from [Tab-By-Shivanshu-Ext](#) (replace with actual link).
-
+This repository includes only the source code for the extension. To use it, download the extension from [Tab-By-Shivanshu-Extension](https://github.com/shivanshu-garg1/Tab-By-Shivanshu-Extension)
 ## Author
 
 Developed by **Shivanshu Garg**
