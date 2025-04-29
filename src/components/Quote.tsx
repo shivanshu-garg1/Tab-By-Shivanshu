@@ -7,7 +7,7 @@ const Quote = () => {
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
 
-    const URL = "https://qapi.vercel.app/api/random";
+    const URL = "https://api.quotable.io/quotes/random";
 
     const fetchData = async () => {
         setLoading(true);
@@ -18,8 +18,9 @@ const Quote = () => {
                 throw new Error("Failed to fetch")
             }
             const data = await res.json();
-            setQuote(data.quote)
-            setAuthor(data.author)
+            // console.log(data);
+            setQuote(data[0].content)
+            setAuthor(data[0].author)
         }
         catch(err){
             setError("Failed to fetch quotes. Please try again.");
